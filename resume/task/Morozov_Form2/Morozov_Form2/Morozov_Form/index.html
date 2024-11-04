@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Заказ Товара</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Заказ Товара</h1>
+        <label>Название</label>
+        <input type="text" placeholder="Введите название товара" required>
+        <label>Цвет</label>
+        <input  class="color" type="color">
+        <label>Имя</label>
+        <input type="text" id="textInput" placeholder="Введите ваше имя" required>
+        <label>e-mail</label>
+        <input type="email" placeholder="Введите вашу почту" required>
+        <label>Количество</label>
+        <input type="number" required min="1" onkeypress="return isNumber(event)">
+        <label>Дата/время</label>
+        <input type="datetime-local" required>
+        <div class="choice">
+            <h4 class="variety1">Выберите способ доставки</h4>
+            <input type="checkbox">
+            <label>Самовывоз</label>
+            <input type="checkbox">
+            <label>Доставка</label>
+        </div>
+        <label>Выберите пункт доставки</label>
+        <select name="product" required>
+            <option value="minsk">Минск</option>
+            <option value="zhodino">Жодино</option>
+            <option value="volkovysk">Волковыск</option>
+            <option value="brest">Брест</option>
+            <option value="lepel">Лепель</option>
+        </select>
+        <div class="varity">
+            <h4 class="variety2">Вид Упаковки</h4>
+            <label for="box">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeR_3PMJzscRym2PIVDIe_zE0oswFF4PNg-w&usqp=CAU">
+            </label>
+            <input type="radio" id="box" name="gender" value="male">
+            <label for="box1">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5bZgG1sMdXqcot-lSfsCd9D4YXRw2-30s1Q&usqp=CAU">
+            </label>
+            <input type="radio" id='box1' name="gender" value="male">
+            <label for="box2">
+              <img src="data:image/jpeg;base64,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">
+            </label>
+            <input type="radio" id="box2" name="gender" value="male">
+        </div>
+        <button>Заказать</button>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

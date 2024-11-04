@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Video" />
+    <meta name="keywords" content="Video" />
+    <title>Video</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <div class="video_content">
+        <video src="taimer.mp4" controls id="video" preload="metadata" ></video>
+        <div class="control_panel">
+            <div class="volume ">
+                <img src="images/voice_on.png" id="volume_stop" />
+                <input class="volume_set rangeVolume" type="range" step="0.1" min="0" max="1" value="0.5" id="volume"/>
+            </div>
+            <div class="pause">
+                <img src="images/rewind.png" class="back_span" id="back">
+                <img src="images/play.png" class="play_span" id="play">
+                <img src="images/forward.png" class="next_span" id="next">
+            </div>
+            <img src="images/full_screen.png" class="up" id="full">
+        </div>
+        <div class="timer">
+            <p id="timer">00:00</p>
+            <input type="range" class="rangeTime" id="range" value="0" >
+        </div>
+        <div class="buttons playbackRate">
+            <button id="slower">медленнее</button>
+            <button id="faster">быстрее</button>
+            <span id="playbackRate"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

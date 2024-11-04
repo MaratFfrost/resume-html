@@ -1,0 +1,61 @@
+h1 {
+  text-align: center;
+}
+
+th {
+  margin-left: auto;
+  padding: 3px;
+  border: 2px solid #000;
+  padding: 15px 15px;
+}
+
+td {
+
+  margin-left: 10px;
+  border: 2px solid #000;
+  padding: 10px 15px;
+}
+
+tr {
+  text-align: left;
+
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.variant {
+  background-color: #CCCCCC;
+}
+
+.text {
+  color: #990000;
+}
+
+.num {
+  transform: rotate(270deg);
+}
+
+.sizes {
+  text-align: center;
+}
+
+tfoot {
+  background-color: #003399;
+  color: #FFFFFF;
+}
+
+caption {
+  text-align: right;
+}
+
+thead {
+  background-color: #3399FF;
+}
+
+tbody {
+  background-color: #FFFFFF;
+  color: #000000;
+}

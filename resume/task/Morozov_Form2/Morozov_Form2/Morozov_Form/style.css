@@ -1,0 +1,84 @@
+body {
+  display: grid;
+  font-size: 25px;
+  place-items: center;
+  margin-top: 60px;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.color {
+  width: 25%;
+}
+
+.content {
+  width: 850px;
+  height: 1150px;
+  display: grid;
+  place-content: center;
+  background-color: lavender;
+  color: black;
+  border-radius: 20px;
+}
+
+.choice {
+  height: 100px;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+input {
+  height: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
+  font-size: 15px;
+  border-radius: 12px;
+  background-color: lavender;
+  border-color: lavenderblush;
+  box-shadow: 0 0 5px 5px lavender;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  height: 35px;
+  width: auto;
+  margin-top: 15px;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  border-color: lavenderblush;
+  border-radius: 12px;
+}
+
+.varity {
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 300px;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.variety1 {
+  margin: 3px 5px 2px 3px;
+
+}
+
+
+.variety2 {
+  margin: 3px 5px 2px 3px;
+  text-align: center;
+}
+
+select {
+  font-size: 20px;
+}

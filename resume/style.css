@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("fonts/RobotoCondensed-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.header-logo {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  color: #18806e;
+}
+
+.header-logo p {
+  align-content: center;
+  font-size: 36px;
+}
+
+.header-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #18806e;
+  align-items: center;
+  padding-left: 25px;
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.nav-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 5rem;
+  justify-content: start;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+.nav-container a:hover {
+  color: #93b9b3;
+}
+
+.name_main {
+  font-size: 42px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: rgb(66, 66, 66);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.avatar img {
+  width: 920px;
+  height: 650px;
+  object-fit: cover;
+}
+
+.grid-container {
+  border-top: 3px dotted #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding-top: 25px;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.left {
+  text-align: right;
+  font-weight: bold;
+  color: rgb(66, 66, 66);
+}
+
+.right {
+  text-align: left;
+  color: rgb(78, 78, 78);
+}
+
+.resume h2 {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(66, 66, 66);
+}
+
+.foot {
+  display: grid;
+  justify-content: end;
+}
+
+.gallery {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #18806e;
+
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+  opacity: .7;
+}
+
+.card-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  margin: auto;
+  margin-top: 50px;
+  width: fit-content;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.right-card {
+  height: 100%;
+  width: 507px;
+  float: right;
+  font-size: 30px;
+}
+
+.left-card {
+  float: left;
+  height: 100%;
+  width: 394px;
+  background-image: url(tasks/Pastushenko/images/logo.jpg);
+  background-size: 95% 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.right-card a {
+  text-decoration: none;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.right-card h1 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 70px;
+  font-family: sans-serif;
+}
+
+.who {
+  font-family: monospace;
+  margin-left: 70px;
+}
+
+
+.wrapper {
+  border: 3px solid;
+  border-radius: 15px;
+  margin: 2vw auto 0;
+  width: 54vw;
+  height: 30vw;
+  background: 35vw 7vw / 24vw no-repeat url(images/logo_mmf.svg), #fff;
+}
+
+.inner {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4% 3%;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 30%;
+}
+
+.name {
+  font-size: 4.2vw;
+  font-weight: 800;
+  line-height: 1;
+  color: #164586;
+  margin: 0 0 1%;
+}
+
+.position {
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: #336699;
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  font-size: 1.4vw;
+  margin: 0;
+  color: #336699;
+  margin-bottom: 4px;
+}
+
+.contact img {
+  width: 4%;
+  padding: 1px;
+  background-color: #164586;
+  border-radius: 4px;
+  margin-right: 4px;
+}
